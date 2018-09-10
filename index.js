@@ -1,3 +1,4 @@
+//Contr
 const database = require("./database");
 const express = require("express");
 //framework standard de node.js pour avoir avoir accès à des méthodes

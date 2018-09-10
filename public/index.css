@@ -3,10 +3,15 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 /**********************************/
+
+body{
+  background-image: url("img/back.jpg");
+  background-size: contain;
+}
+
 header{
   display: flex;
   height: 75px;
@@ -54,17 +59,23 @@ header p{
   height: 70px;
   width: 315px;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 #principal{
   display: flex;
+  background: #b4a5aa;
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  border-radius: 10px;
 
 }
 
 #formulaire{
-  height: 630px;
+  height: 400px;
   width: 315px;
-  border-radius: 50px;
+  border-radius: 20px;
   background: #b4a5aa;
   padding: 15px;
 
@@ -75,18 +86,40 @@ label{
 }
 
 input{
+  border : 0px solid transparent;
+  border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 15px;
   height: 30px;
   width: 240px;
 }
 
+#addProd{
+  margin-left: 100px;
+  margin-top: 10px;
+  height: 50px;
+  width: 75px;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #220022;
+  color: #220022;
+  transition: 1s;
+}
+
 /**********************************/
 
+.cont-table{
+  width: 80%;
+  height: 600px;
+  background: #D6CDD0;
+  border-top-right-radius: 20px;
+}
+
 table{
-  margin-left: 20px;
+
   background: #b4a5aa;
-  width: 70%;
+  width: 100%;
+  border-top-right-radius: 10px;
 }
 
 .first-tr{

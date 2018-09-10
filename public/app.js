@@ -4,16 +4,16 @@ var inputnom, inputprix, inputdescription, inputid, obj, listeObj;
 
 const doAjax = function doAjax(url, method, callback, data){
   try {
-    const xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Content-Type", "application/json");
+    const xhr = new XMLHttpRequest(); // nouvelle requête
+    xhr.open(method, url);// 1er étape
+    xhr.setRequestHeader("Content-Type", "application/json");// 2e étape le type de ce qu'on envoie
     data = data ? JSON.stringify(data) : null;
     if (method === "POST"){
         if (!data) throw new Error("bad call");
     }
     //on attend le retour de l'appel AJAX
-    xhr.onload = evt => callback (evt.target.response || evt.srcElement.response);
-    xhr.send(data);
+    xhr.onload = evt => callback (evt.target.response || evt.srcElement.response); //4e le clbk permet de traiter la réponse
+    xhr.send(data);//3e étape tu envoie la data, on va dans l'index
 
     }
   catch(err) {
@@ -25,7 +25,7 @@ const getProducts = function getProducts() {
     const url = "http://localhost:7777/prod";
     doAjax(url, "GET", res => {
         //console.log(JSON.parse(res));
-        listeObj = JSON.parse(res);
+        listeObj = JSON.parse(res);// c'est la réponse de la requête SQL = evt.target.response
         console.log(listeObj);
         displayProd(listeObj)
     });
@@ -46,7 +46,7 @@ const createProd = function createProd(e) {
         prix : inputprix.value,
         description : inputdescription.value
 
-    });
+    });//definition d'un nouvel objet/produit
     displayNewProd(obj);
 };
 
