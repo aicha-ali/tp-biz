@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/**********************************/
+header{
+  display: flex;
+  height: 75px;
+  width: 100%;
+  background: #220022;
+  margin-bottom: 50px;
+}
+
+header h1{
+  font-family: 'Cookie', cursive;
+  color: #b4a5aa;
+  font-size: 45px;
+}
+
+header p{
+  font-family: 'Teko', sans-serif;
+  font-size: 15px;
+}
+
+.logo {
+  margin-top: 20px;
+  margin-left: 15px;
+  line-height: 20px;
+}
+
+#test{
+  margin-top: 10px;
+  margin-left: 850px;
+  height: 50px;
+  width: 140px;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #b4a5aa;
+  color: #b4a5aa;
+  transition: 1s;
+}
+
+#test:hover{
+  color:#220022;
+  background: #b4a5aa;
+}
+/**********************************/
+
+.instruction{
+  height: 70px;
+  width: 315px;
+  margin-bottom: 20px;
+}
+
+#principal{
+  display: flex;
+
+}
+
+#formulaire{
+  height: 630px;
+  width: 315px;
+  border-radius: 50px;
+  background: #b4a5aa;
+  padding: 15px;
+
+}
+
+label{
+  font-size: 15px;
+}
+
+input{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 240px;
+}
+
+/**********************************/
+
+table{
+  margin-left: 20px;
+  background: #b4a5aa;
+  width: 70%;
+}
+
+.first-tr{
+  height: 50px;
+  background: #b4a5aa;
+}
+
+tr{
+  height: 50px;
+
+}
+td{
+  border-collapse: collapse;
+
+}
+/**********************************/

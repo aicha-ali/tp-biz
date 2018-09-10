@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Gestion du stock</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="app.js" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+    <article class="logo">
+      <h1>bizOnline</h1>
+      <p>vos achats, nos affaires</p>
+    </article>
+    <button type="button" name="button" id="test">Afficher tous mes produits</button>
+  </header>
+<section id="principal">
+  <form id="formulaire">
+      <div class="instruction">BIENVENUE, </div>
+    
+      <label for="nom">Nom</label>
+      <br>
+      <input type="text" id="nom-inp" value="" placeholder="Article">
+      <br>
+      <label for="prix">Prix</label>
+      <br>
+      <input type="number" min="0" id="prix" value="0">
+      <br>
+      <label for="Description">Description</label>
+      <br>
+      <input type="text" maxlength="235" id="des" value="" placeholder="(235 caractères)">
+      <br>
+      <button type="button" name="btn_addStock" id="addProd">Valider</button>
+
+  </form>
+  <table>
+    <thead>
+        <tr class="first-tr">
+          <th>Nom de l'article</th>
+          <th>Prix</th>
+          <th>Description</th>
+
+
+        </tr>
+
+    </thead>
+    <tbody id="parent">
+
+    </tbody>
+
+    </table>
+  </section>
+
+</body>
+</html>
